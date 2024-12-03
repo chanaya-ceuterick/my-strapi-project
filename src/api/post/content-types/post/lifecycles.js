@@ -10,7 +10,7 @@ module.exports = {
   },
 
   async beforeUpdate(event) {
-    console.log(, "########## BEFORE UPDATE ##########");
+    console.log("########## BEFORE UPDATE ##########");
     if (event.params.data.content) {
       event.params.data.readingTime =
       readingTime(event.params.data.content)?.text || null;
